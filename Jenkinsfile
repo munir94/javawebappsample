@@ -22,8 +22,8 @@ node {
     }
   
     stage('deploy') {
-      def resourceGroup = '<resource_group>'
-      def webAppName = '<app_name>'
+      def resourceGroup = 'ASP-PLAN-RG'
+      def webAppName = 'cpe-test'
       // login Azure
      withCredentials([azureServicePrincipal(credentialsId: 'CPE-Jenkins',
                                     subscriptionIdVariable: 'SUBS_ID',
