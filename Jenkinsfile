@@ -1,3 +1,7 @@
+pipeline{
+    //agent any 
+    agent { label 'master'}
+}
 import groovy.json.JsonSlurper
 
 def getFtpPublishProfile(def publishProfilesJson) {
